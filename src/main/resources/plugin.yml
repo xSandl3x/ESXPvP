@@ -1,0 +1,6 @@
+name: ESXPvP
+version: '${project.version}'
+main: ua.xsandl3x.esxpvp.Main
+api-version: 1.19
+authors: [ xSandl3x ]
+description: An attempt to implement old pvp on new version.
