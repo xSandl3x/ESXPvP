@@ -1,2 +1,10 @@
 # ESXPvP - Experemental SandleX PvP
-- I'll start experimenting soon
+
+This plugin makes it possible to bring back the old pvp.
+
+# FEATURES
+- Modules system
+- Attack Speed Module
+- Attack Frequency Module
+
+So far everything.
