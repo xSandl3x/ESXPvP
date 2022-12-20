@@ -21,7 +21,12 @@ public class AttackFrequencyModule extends AbstractModule {
         });
 
         this.addEventListener(CreatureSpawnEvent.class, event -> {
-            LivingEntity livingEntity = event.getEntity();
+            Entity entity = event.getEntity();
+
+            if (!(entity instanceof LivingEntity))
+                return;
+
+            LivingEntity livingEntity = (LivingEntity)entity;
             livingEntity.setMaximumNoDamageTicks(this.HIT_TICKS - 2);
         });
     }

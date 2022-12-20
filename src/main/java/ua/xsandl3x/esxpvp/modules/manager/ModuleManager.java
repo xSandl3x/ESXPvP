@@ -16,7 +16,13 @@ public class ModuleManager implements ILoadable, IUnloadable {
 
     @Override
     public void load() {
-        this.moduleList.addAll(Arrays.asList(new AttackCooldownModule(), new AttackFrequencyModule()));
+        this.moduleList.addAll(Arrays.asList(
+                new AttackCooldownModule(),
+                new AttackFrequencyModule(),
+                new AttackSoundsModule(),
+                new OldBurnDelayModule(),
+                new BowBoostModule())
+        );
 
         List<AbstractModule> sortedList = this.moduleList.stream()
                 .filter(AbstractModule::isEnabled)
