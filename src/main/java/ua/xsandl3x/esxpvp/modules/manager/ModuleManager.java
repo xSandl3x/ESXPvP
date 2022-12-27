@@ -19,9 +19,11 @@ public class ModuleManager implements ILoadable, IUnloadable {
         this.moduleList.addAll(Arrays.asList(
                 new AttackCooldownModule(),
                 new AttackFrequencyModule(),
+                new ProjectileHitModule(),
                 new AttackSoundsModule(),
                 new OldBurnDelayModule(),
-                new BowBoostModule())
+                new BowBoostModule(),
+                new FishRodModule())
         );
 
         List<AbstractModule> sortedList = this.moduleList.stream()
