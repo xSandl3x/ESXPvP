@@ -7,6 +7,8 @@ This plugin makes it possible to bring back the old pvp.
 - Attack Speed Module
 - Attack Frequency Module
 - Bow Boost Module
+- Old Fish rod Knockback Module
+- Old Projectile hit Module
 - Old Burn Module
 
 So far everything.
